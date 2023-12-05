@@ -1,4 +1,4 @@
-console.log("ESERCIZIO 2");
+// ESERCIZIO 2
 
 let petNameField = document.getElementById("petName-field");
 let ownerNameField = document.getElementById("ownerName-field");
@@ -31,7 +31,8 @@ const renderList = function () {
   petList.innerHTML = "";
   pets.forEach((pet) => {
     const newLi = document.createElement("li");
-    newLi.innerText = "Nome: " + pet.petName + ", proprietario: " + pet.ownerName;
+    newLi.innerText =
+      "Nome: " + pet.petName + " Proprietario: " + pet.ownerName + " Specie: " + pet.species + " Razza: " + pet.breed;
     petList.appendChild(newLi);
   });
 };
